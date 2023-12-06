@@ -1,0 +1,18 @@
+<div xmlns:h="http://java.sun.com/jsf/html"
+     xmlns:p="http://primefaces.org/ui"
+     xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:form>
+        <h:panelGrid columns="2" cellpadding="5">
+            <h:outputLabel for="username" value="Username:" />
+            <p:inputText id="username" value="#{usuarioController.usuario.mail}" required="true" label="username" />
+
+            <h:outputLabel for="password" value="Password:" />
+            <p:password id="password" value="#{usuarioController.usuario.password}" required="true" label="password" />
+
+            <f:facet name="footer">
+                <p:commandButton value="Login" action="#{usuarioController.auth}"
+                                 oncomplete="handleLoginRequest(xhr, status, args)" />
+            </f:facet>
+        </h:panelGrid>
+    </h:form>
+</div>

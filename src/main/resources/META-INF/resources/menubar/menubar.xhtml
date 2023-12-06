@@ -1,0 +1,13 @@
+<div xmlns:p="http://primefaces.org/ui"
+     xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <p:menubar>
+        <p:menuitem value="Inicio" action="#{navigationController.updateContentPath('home')}" update="content"/>
+        <p:submenu label="Opciones">
+            <p:menuitem value="Opción 1" action="#{navigationController.updateContentPath('content/option1')}" update="content"/>
+            <p:menuitem value="Opción 2" action="#{navigationController.updateContentPath('content/option2')}" update="content"/>
+        </p:submenu>
+        <f:facet name="options">
+            <p:commandButton value="Login" update="content" action="#{navigationController.updateContentPath('login')}"/>
+        </f:facet>
+    </p:menubar>
+</div>
