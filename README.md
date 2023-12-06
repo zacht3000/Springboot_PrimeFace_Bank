@@ -1,6 +1,6 @@
 # Springboot_PrimeFace_Bank
-###**Base de datos**
+### **Base de datos**
 -[MySQL](https://dev.mysql.com/downloads/mysql/)
 
-###**Java**
+### **Java**
 -[Java 21](https://www.oracle.com/es/java/technologies/downloads/#java21)
